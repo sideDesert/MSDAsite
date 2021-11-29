@@ -48,7 +48,8 @@ Table of contents
 body {
     font-family: Roboto, sans-serif;
     -webkit-font-smoothing: antialiased;
-    font-smoothing: antialiased;
+    -moz-osx-font-smoothing: antialiased;
+    font-smooth: antialiased;
     font-size: 15px;
     color: #646464;
     font-weight: 400;
@@ -1696,8 +1697,8 @@ textarea.input-bg {
 
     .btn.btn-white:hover, .btn.btn-white:focus {
         background: transparent;
-        color: #840811;
-        border: 1px solid #840811;
+        color: #fe1313;
+    	border: 1px solid #fe1313;
     }
 
 .btn.btn-black {
@@ -1802,11 +1803,23 @@ textarea.input-bg {
     color: #ff214f;
 }
 
-    .btn.btn-transparent-deep-pink:hover, .btn.btn-transparent-deep-pink:focus {
-        background: #ff214f;
-        border-color: #ff214f;
-        color: #fff;
-    }
+.btn.btn-transparent-deep-pink:hover, .btn.btn-transparent-deep-pink:focus {
+    background: #ff214f;
+    border-color: #ff214f;
+    color: #fff;
+}
+
+.btn.btn-contact-us{
+    border: white solid 1px;
+    color: white;
+    background-color: transparent;
+}
+
+.btn.btn-contact-us:hover{
+    border: white solid 1px;
+    color: #ff214f;
+    background-color: white;
+}
 
 /* button rounded */
 .btn.btn-rounded {
@@ -2334,10 +2347,10 @@ textarea.input-bg {
 .background-position-right {
     background-position: right center;
 }
-
+/* 
 .background-position-top {
-    /*background-position: center top !important;*/
-}
+    background-position: center top !important;
+} */
 
 .up-down-ani {
     display: table;
@@ -8780,9 +8793,7 @@ footer .small-icon li {
 }
 
 @-o-keyframes fadeIn {
-    0%;
-
-{
+    0%{
     opacity: 0;
 }
 
@@ -8818,7 +8829,8 @@ footer .small-icon li {
     -ms-animation-fill-mode: both;
     -o-animation-fill-mode: both;
     animation-fill-mode: both;
-    webkit-backface-visibility: hidden;
+    backface-visibility:hidden;
+    -webkit-backface-visibility: hidden;
     -moz-backface-visibility: hidden;
     -ms-backface-visibility: hidden;
 }
@@ -10499,7 +10511,8 @@ nav.navbar.navbar-default ul li.dropdown ul.dropdown-menu > li:last-child {
 }
 
 nav.navbar.navbar-default ul li.dropdown .dropdown-menu li > a:hover {
-    color: #d70010 background: transparent;
+    color: #d70010; 
+    background: transparent;
     left: 5px;
 }
 
@@ -16983,7 +16996,7 @@ aside .latest-post li figure {
     padding: 45px;
     z-index: 1;
     opacity: 0;
-    webkit-transition: all 0.2s ease-out;
+    -webkit-transition: all 0.2s ease-out;
     -moz-transition: all 0.2s ease-out;
     -o-transition: all 0.2s ease-out;
     transition: all 0.2s ease-out;
@@ -17125,5 +17138,5 @@ aside .latest-post li figure {
 }
 .new1 {
     color:#444;
-    font-size:20px;
+    font-size:3rem;
 }
